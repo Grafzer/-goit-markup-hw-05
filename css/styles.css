@@ -465,7 +465,6 @@ ul {
 	align-items: center;
 	width: 20px;
 	height: 20px;
-
 }
 
 .social-links:hover,
@@ -482,7 +481,6 @@ ul {
 .social-links:hover .social-icon {
 	fill: var(--secondary-background-color);
 	background-color: var(--logo-color);
-
 }
 
 .social-item:focus .social-icon {
@@ -647,4 +645,11 @@ address {
 .contact-phone-footer:hover,
 .contact-phone-footer:focus {
 	color: var(--logo-color);
+}
+
+.is-hidden {
+	pointer-events: none;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
 }

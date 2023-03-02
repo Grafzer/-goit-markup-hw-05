@@ -111,6 +111,19 @@ nav {
 	padding: 32px 0;
 }
 
+.underline-section::after {
+	content: "";
+	background-color: var(--logo-color);
+	height: 4px;
+	display: block;
+	border-radius: 2px;
+}
+
+.active-page {
+	display: block;
+	padding-bottom: 30px;
+}
+
 .contacts {
 	display: flex;
 	gap: 50px;
@@ -177,6 +190,7 @@ nav {
 
 hr {
 	border: 1px solid var(--line-color);
+	margin: auto;
 }
 
 .banner {

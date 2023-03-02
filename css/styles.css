@@ -58,10 +58,6 @@ body {
 	width: 1200px;
 }
 
-.current:active {
-	color: var(--logo-color);
-}
-
 .header {
 	display: flex;
 	height: 80px;
@@ -92,7 +88,8 @@ nav {
 	margin-left: 93px;
 }
 
-.navigation-link:hover {
+.navigation-link:hover,
+.navigation-link:focus {
 	color: var(--logo-color);
 }
 
@@ -118,6 +115,8 @@ nav {
 }
 
 .contact-mail-header {
+	display: inline-flex;
+	align-items: center;
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -126,17 +125,45 @@ nav {
 
 .mail-icon {
 	margin-right: 10px;
+	fill: var(--secondary-color);
+}
+
+.mail-icon:hover {
+	fill: var(--logo-color);
+}
+
+.phone-icon {
+	margin-right: 10px;
+	fill: var(--secondary-color);
+}
+
+.phone-icon:hover {
+	fill: var(--logo-color);
 }
 
 .contact-phone-header {
+	display: inline-flex;
+	align-items: center;
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--secondary-color);
 }
 
-.phone-icon {
-	margin-right: 10px;
+.contact-phone-header:hover .phone-icon {
+	fill: var(--logo-color);
+}
+
+.contact-mail-header:hover .mail-icon {
+	fill: var(--logo-color);
+}
+
+.contact-phone-header:focus .phone-icon {
+	fill: var(--logo-color);
+}
+
+.contact-mail-header:focus .mail-icon {
+	fill: var(--logo-color);
 }
 
 hr {
@@ -414,13 +441,13 @@ ul {
 	margin-right: auto;
 }
 
-.social-item {
+/* .social-item {
 	display: flex;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
 	margin-right: 10px;
-}
+} */
 
 .social-links {
 	display: flex;
@@ -429,17 +456,42 @@ ul {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+	margin-right: 10px;
 	cursor: pointer;
+	fill: var(--icon-color);
 }
 
 .social-icon {
 	align-items: center;
+	width: 20px;
+	height: 20px;
+
 }
 
 .social-links:hover,
 .social-links:focus {
+	cursor: pointer;
 	background-color: var(--logo-color);
 	fill: var(--secondary-background-color);
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.social-links:hover .social-icon {
+	fill: var(--secondary-background-color);
+	background-color: var(--logo-color);
+
+}
+
+.social-item:focus .social-icon {
+	fill: var(--secondary-background-color);
+	background-color: var(--logo-color);
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin-right: 10px;
 }
 
 .customers {
@@ -471,8 +523,14 @@ ul {
 	margin-right: 10px;
 }
 
-.firm-item:hover {
+.firm-item {
+	fill: var(--icon-color);
+}
+
+.firm-item:hover,
+.firm-item:focus {
 	cursor: pointer;
+	fill: var(--logo-color);
 }
 
 a:link {
@@ -554,7 +612,12 @@ address {
 	border-radius: 50%;
 }
 
-.footer-social-icon:hover {
+.footer-social-item:hover .footer-social-icon {
+	background-color: var(--logo-color);
+	fill: var(--secondary-background-color);
+}
+
+.footer-social-item:focus .footer-social-icon {
 	background-color: var(--logo-color);
 	fill: var(--secondary-background-color);
 }

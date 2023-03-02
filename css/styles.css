@@ -12,6 +12,8 @@
 	--secondary-background-color: #ffffff;
 	--border-tile-color: #eeeeee;
 	--temporary-color: aqua;
+	--modal-background-color: rgba(0, 0, 0, 0.2);
+	--tranistion: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -91,6 +93,7 @@ nav {
 .navigation-link:hover,
 .navigation-link:focus {
 	color: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .navigation {
@@ -130,6 +133,7 @@ nav {
 
 .mail-icon:hover {
 	fill: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .phone-icon {
@@ -139,6 +143,7 @@ nav {
 
 .phone-icon:hover {
 	fill: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .contact-phone-header {
@@ -152,18 +157,22 @@ nav {
 
 .contact-phone-header:hover .phone-icon {
 	fill: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .contact-mail-header:hover .mail-icon {
 	fill: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .contact-phone-header:focus .phone-icon {
 	fill: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .contact-mail-header:focus .mail-icon {
 	fill: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 hr {
@@ -217,6 +226,7 @@ hr {
 	color: var(--secondary-text-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
+	transition: var(--tranistion);
 }
 
 .menu-buttons {
@@ -245,6 +255,7 @@ ul {
 .tile:hover,
 .tile:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	transition: var(--tranistion);
 }
 
 .portfolio-button {
@@ -267,6 +278,7 @@ ul {
 .portfolio-button:focus {
 	color: var(--secondary-background-color);
 	background-color: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .tile-text {
@@ -476,11 +488,13 @@ ul {
 	height: 44px;
 	border-radius: 50%;
 	margin-right: 10px;
+	transition: var(--tranistion);
 }
 
 .social-links:hover .social-icon {
 	fill: var(--secondary-background-color);
 	background-color: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .social-item:focus .social-icon {
@@ -490,6 +504,7 @@ ul {
 	height: 44px;
 	border-radius: 50%;
 	margin-right: 10px;
+	transition: var(--tranistion);
 }
 
 .customers {
@@ -529,6 +544,7 @@ ul {
 .firm-item:focus {
 	cursor: pointer;
 	fill: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 a:link {
@@ -537,15 +553,19 @@ a:link {
 
 a:hover {
 	color: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 a:focus {
 	color: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 a:active {
 	color: transparent;
 }
+
+/* footer */
 
 .footer {
 	background-color: var(--footer-color);
@@ -613,11 +633,13 @@ address {
 .footer-social-item:hover .footer-social-icon {
 	background-color: var(--logo-color);
 	fill: var(--secondary-background-color);
+	transition: var(--tranistion);
 }
 
 .footer-social-item:focus .footer-social-icon {
 	background-color: var(--logo-color);
 	fill: var(--secondary-background-color);
+	transition: var(--tranistion);
 }
 
 .visually-hidden {
@@ -647,9 +669,48 @@ address {
 	color: var(--logo-color);
 }
 
+/* modal */
+
+.backdrop {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--modal-background-color);
+	z-index: 100;
+	visibility: visible;
+	opacity: 1;
+	transition-property: opacity, visibility, transform;
+}
+
 .is-hidden {
-	pointer-events: none;
-	visibility: hidden;
 	opacity: 0;
-	transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
+	visibility: hidden;
+	pointer-events: none;
+}
+.modal {
+	position: absolute;
+	width: 528px;
+	height: 581px;
+	background-color: var(--background-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
+}
+.close-btn {
+	position: absolute;
+	display: block;
+	width: 44px;
+	height: 44px;
+	right: 10px;
+	top: 10px;
+	background-color: var(--icon-color);
+	border: 1px solid var(--button-background-color);
+	border-radius: 50%;
+	cursor: pointer;
 }

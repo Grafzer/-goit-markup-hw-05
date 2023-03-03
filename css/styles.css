@@ -328,7 +328,6 @@ ul {
   color: #2a2a2a;
 } */
 
-
 .tile-text {
 	border: 1px solid var(--border-tile-color);
 	padding: 20px 24px;
@@ -382,6 +381,8 @@ ul {
 	margin-bottom: 9px;
 }
 
+/* ================== lorem-section ================== */
+
 .lorem-section {
 	padding-bottom: 0px;
 }
@@ -421,6 +422,8 @@ ul {
 	width: 270px;
 }
 
+/* ================== Czym się zajmujemy ================== */
+
 .jobs-section {
 	padding: 94px 0;
 }
@@ -440,6 +443,27 @@ ul {
 	gap: 30px;
 	justify-content: center;
 }
+
+.thumb {
+	position: relative;
+	overflow: hidden;
+}
+
+.img-label {
+	position: absolute;
+	width: 370px;
+	height: 70px;
+	top: 224px;
+	font-weight: 700;
+	line-height: 16.41px;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 27px 90px;
+	background-color: rgba(47, 48, 58, 0.8);
+	color: var(--secondary-background-color);
+}
+
+/* ================== Nasz zespół ================== */
 
 .staff-section {
 	margin: 0px;

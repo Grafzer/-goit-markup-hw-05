@@ -301,8 +301,6 @@ ul {
 	transition: var(--tranistion);
 }
 
-
-
 .tile-text {
 	border: 1px solid var(--border-tile-color);
 	padding: 20px 24px;
@@ -378,7 +376,6 @@ ul {
 .contact-mail-footer {
 	font-weight: 400;
 	line-height: 1.71;
-
 	color: var(--secondary-color);
 	margin-bottom: 9px;
 }
@@ -388,6 +385,16 @@ ul {
 	line-height: 1.71;
 	color: var(--secondary-color);
 	margin-bottom: 9px;
+}
+
+.contact-phone-footer:hover,
+.contact-phone-footer:focus {
+	color: var(--logo-color);
+}
+
+.contact-mail-footer:hover,
+.contact-mail-footer:focus {
+	color: var(--logo-color);
 }
 
 /* ================== lorem-section ================== */

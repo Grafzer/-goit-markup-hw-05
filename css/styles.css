@@ -256,6 +256,8 @@ ul {
 	margin: 0;
 }
 
+/* ================== portfolio buttons ================== */
+
 .portfolio-button {
 	font-family: "Roboto";
 	font-weight: 700;
@@ -280,6 +282,8 @@ ul {
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* ================== portfolio tiles ================== */
+
 .grid-tile-set {
 	display: flex;
 	flex-wrap: wrap;
@@ -296,6 +300,31 @@ ul {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 	transition: var(--tranistion);
 }
+
+
+
+.tile-text {
+	border: 1px solid var(--border-tile-color);
+	padding: 20px 24px;
+}
+
+.tile-header {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	margin-bottom: 4px;
+}
+
+.tile-subheader {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: 0.03em;
+	color: var(--secondary-color);
+}
+
+/* ================== portfolio tiles overlay ================== */
 
 .box {
 	overflow: hidden;
@@ -327,57 +356,7 @@ ul {
 	padding: 49px 45px 49px 24px;
 }
 
-/* .tile:hover .overlay {
-  transform: translatex(0);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #3f51b5;
-
-  transform: translatex(-100%);
-  transition: transform 250ms ease;
-}
-
-.overlay > p {
-  color: #fff;
-  padding: 10px;
-  margin: 0;
-  font-size: 18px;
-}
-
-.overlay code {
-  display: inline-block;
-  padding: 2px 4px;
-  border-radius: 2px;
-  background-color: #fff;
-  color: #2a2a2a;
-} */
-
-.tile-text {
-	border: 1px solid var(--border-tile-color);
-	padding: 20px 24px;
-}
-
-.tile-header {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 2;
-	letter-spacing: 0.06em;
-	margin-bottom: 4px;
-}
-
-.tile-subheader {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 2;
-	letter-spacing: 0.03em;
-	color: var(--secondary-color);
-}
+/* ================== footer ================== */
 
 .logo-footer {
 	font-family: "Raleway";
@@ -555,14 +534,6 @@ ul {
 	margin-right: auto;
 }
 
-/* .social-item {
-	display: flex;
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-	margin-right: 10px;
-} */
-
 .social-links {
 	display: flex;
 	justify-content: center;
@@ -670,7 +641,7 @@ a:active {
 	color: transparent;
 }
 
-/* footer */
+/* ================== footer ================== */
 
 .footer {
 	background-color: var(--footer-color);
@@ -774,7 +745,7 @@ address {
 	color: var(--logo-color);
 }
 
-/* modal */
+/* ================== modal ================== */
 
 .backdrop {
 	position: fixed;

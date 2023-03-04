@@ -652,11 +652,13 @@ a:visited {
 .contact-phone-footer:hover,
 .contact-phone-footer:focus {
 	color: var(--logo-color);
+	transition: var(--tranistion);
 }
 
 .contact-mail-footer:hover,
 .contact-mail-footer:focus {
 	color: var(--logo-color);
+		transition: var(--tranistion);
 }
 
 /* sekcja footer jest podzielona na dwie pod-sekcje divowe by łatwiej było je rozmieścić */

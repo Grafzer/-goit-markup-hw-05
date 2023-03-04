@@ -354,49 +354,6 @@ ul {
 	padding: 49px 45px 49px 24px;
 }
 
-/* ================== footer ================== */
-
-.logo-footer {
-	font-family: "Raleway";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	color: var(--logo-color);
-	text-decoration: none;
-	word-spacing: -6px;
-}
-
-.localization-address {
-	font-weight: 400;
-	line-height: 1.71;
-	color: var(--secondary-background-color);
-}
-
-.contact-mail-footer {
-	font-weight: 400;
-	line-height: 1.71;
-	color: var(--secondary-color);
-	margin-bottom: 9px;
-}
-
-.contact-phone-footer {
-	font-weight: 400;
-	line-height: 1.71;
-	color: var(--secondary-color);
-	margin-bottom: 9px;
-}
-
-.contact-phone-footer:hover,
-.contact-phone-footer:focus {
-	color: var(--logo-color);
-}
-
-.contact-mail-footer:hover,
-.contact-mail-footer:focus {
-	color: var(--logo-color);
-}
-
 /* ================== lorem-section ================== */
 
 .lorem-section {
@@ -573,7 +530,6 @@ ul {
 
 .social-links:hover .social-icon {
 	fill: var(--secondary-background-color);
-	background-color: var(--logo-color);
 	transition: var(--tranistion);
 }
 
@@ -648,12 +604,59 @@ a:active {
 	color: transparent;
 }
 
-/* ================== footer ================== */
+/* ================== footer right section ================== */
 
 .footer {
 	background-color: var(--footer-color);
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+/* ================== footer left section ================== */
+
+.logo-footer {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--logo-color);
+	text-decoration: none;
+	word-spacing: -6px;
+}
+
+.localization-address {
+	font-weight: 400;
+	line-height: 1.71;
+	color: var(--secondary-background-color);
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+.contact-mail-footer {
+	font-weight: 400;
+	line-height: 1.71;
+	color: var(--icon-color);
+	margin-bottom: 9px;
+}
+
+.contact-phone-footer {
+	font-weight: 400;
+	line-height: 1.71;
+	color: var(--icon-color);
+	margin-bottom: 9px;
+}
+
+.contact-phone-footer:hover,
+.contact-phone-footer:focus {
+	color: var(--logo-color);
+}
+
+.contact-mail-footer:hover,
+.contact-mail-footer:focus {
+	color: var(--logo-color);
 }
 
 /* sekcja footer jest podzielona na dwie pod-sekcje divowe by łatwiej było je rozmieścić */
@@ -740,16 +743,6 @@ address {
 
 .contacts-lists:not(:last-child) {
 	margin-bottom: 9px;
-}
-
-.contact-mail-footer:hover,
-.contact-mail-footer:focus {
-	color: var(--logo-color);
-}
-
-.contact-phone-footer:hover,
-.contact-phone-footer:focus {
-	color: var(--logo-color);
 }
 
 /* ================== modal ================== */
